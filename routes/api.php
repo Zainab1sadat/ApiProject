@@ -55,7 +55,7 @@ Route::get('/verified-user', function () {
 
 
 // Posts api route
-Route::apiResource('/post', PostController::class)->middleware('auth:sanctum');
+Route::apiResource('/post', PostController::class);
 
 // About api route
 Route::get('/about', [AboutController::class, 'index'])->middleware('auth:sanctum');
